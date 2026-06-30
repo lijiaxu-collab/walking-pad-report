@@ -194,18 +194,23 @@ details.voices li .st{font-family:"Sora",sans-serif;font-weight:700;color:var(--
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap">
       <div><div class="qno">问题 3</div><h2 class="question">核心重点商家有哪些？</h2></div>    </div>
     <div class="section-label evidence" style="margin-top:1.2rem"><span class="dot"></span>结论 + 论据 · 各分类 Top5 品牌（2026 · 按月均子体销售额）</div>
-    <table class="tbl">
-      <thead><tr><th>排名</th><th style="color:var(--cat1)">无扶手品牌</th><th>占比</th><th>月均销量</th><th style="color:var(--cat2)">带扶手品牌</th><th>占比</th><th>月均销量</th></tr></thead>
+    <table class="tbl" style="font-size:.8rem">
+      <thead><tr><th>分类</th><th>排名</th><th>品牌</th><th>2026月均销售额占比</th><th>2026月均销量</th><th>近12月子体销售额</th><th>前12月子体销售额</th><th>同比</th></tr></thead>
       <tbody>
-        <tr><td class="num">1</td><td>TRAILVIBER</td><td class="num">10.1%</td><td class="num">3,550</td><td>Kassadin</td><td class="num">7.8%</td><td class="num">8,680</td></tr>
-        <tr><td class="num">2</td><td>Buztrio</td><td class="num">9.4%</td><td class="num">6,380</td><td>CURSOR FITNESS</td><td class="num">7.2%</td><td class="num">6,840</td></tr>
-        <tr><td class="num">3</td><td>Sperax</td><td class="num">8.7%</td><td class="num">5,500</td><td>Wildroot Organic</td><td class="num">6.6%</td><td class="num">6,880</td></tr>
-        <tr><td class="num">4</td><td>Abonow</td><td class="num">5.4%</td><td class="num">4,430</td><td>LONTEK</td><td class="num">5.4%</td><td class="num">6,090</td></tr>
-        <tr><td class="num">5</td><td>TREAFLOW</td><td class="num">4.9%</td><td class="num">3,580</td><td>Acezoe</td><td class="num">5.4%</td><td class="num">2,970</td></tr>
+        <tr><td rowspan="5"><span class="cat-pill"><span class="sw" style="background:var(--cat1)"></span>无扶手</span></td><td class="num">1</td><td>TRAILVIBER</td><td class="num">10.1%</td><td class="num">3,550</td><td class="num">2,361万</td><td class="num">407万</td><td class="num" style="color:var(--pos)">+480.6%</td></tr>
+        <tr><td class="num">2</td><td>Buztrio</td><td class="num">9.4%</td><td class="num">6,380</td><td class="num">512万</td><td class="num">0</td><td class="num" style="color:var(--amber)">前12月无销售</td></tr>
+        <tr><td class="num">3</td><td>Sperax</td><td class="num">8.7%</td><td class="num">5,500</td><td class="num">3,419万</td><td class="num">14,690万</td><td class="num" style="color:var(--neg)">−76.7%</td></tr>
+        <tr><td class="num">4</td><td>Abonow</td><td class="num">5.4%</td><td class="num">4,430</td><td class="num">1,191万</td><td class="num">645万</td><td class="num" style="color:var(--pos)">+84.6%</td></tr>
+        <tr><td class="num">5</td><td>TREAFLOW</td><td class="num">4.9%</td><td class="num">3,580</td><td class="num">729万</td><td class="num">265万</td><td class="num" style="color:var(--pos)">+175.4%</td></tr>
+        <tr><td rowspan="5"><span class="cat-pill"><span class="sw" style="background:var(--cat2)"></span>带扶手</span></td><td class="num">1</td><td>Kassadin</td><td class="num">7.8%</td><td class="num">8,680</td><td class="num">1,206万</td><td class="num">0</td><td class="num" style="color:var(--amber)">前12月无销售</td></tr>
+        <tr><td class="num">2</td><td>CURSOR FITNESS</td><td class="num">7.2%</td><td class="num">6,840</td><td class="num">706万</td><td class="num">252万</td><td class="num" style="color:var(--pos)">+179.5%</td></tr>
+        <tr><td class="num">3</td><td>Wildroot Organic</td><td class="num">6.6%</td><td class="num">6,880</td><td class="num">667万</td><td class="num">0</td><td class="num" style="color:var(--amber)">前12月无销售</td></tr>
+        <tr><td class="num">4</td><td>LONTEK</td><td class="num">5.4%</td><td class="num">6,090</td><td class="num">758万</td><td class="num">24万</td><td class="num" style="color:var(--pos)">+3,111%</td></tr>
+        <tr><td class="num">5</td><td>Acezoe</td><td class="num">5.4%</td><td class="num">2,970</td><td class="num">821万</td><td class="num">439万</td><td class="num" style="color:var(--pos)">+86.8%</td></tr>
       </tbody>
     </table>
-    <div class="chartbox" style="margin-top:1rem"><h4>各分类 Top5 品牌销售额占比（%）</h4><canvas id="c_brand" height="85"></canvas></div>
-    <div class="source"><b>来源</b><span>《走步机.xlsx·亚马逊表》2026年数据，按分类计算品牌月均子体销售额及占比、月均子体销量（月数=5），取各分类前5。</span></div>
+    <p style="font-size:.74rem;color:var(--ink-soft);margin-top:.5rem">观察：3 个头部品牌（Buztrio、Kassadin、Wildroot）在「前12月窗口(2024-06~2025-05)」无销售——它们于 <b>2025 下半年才上市</b>，故无完整同比基数；但因 2025 年内已有销售，按问1「2026有/2025无」定义它们<b>并非"新品牌"</b>（两处时间窗不同，勿混淆）。曾经的头部 Sperax 同比 −76.7%，整体印证问1「高换手、格局分散」。近/前12月销售额跨分类按品牌全量统计。</p>
+    <div class="source"><b>来源</b><span>《走步机.xlsx·亚马逊表》。占比/销量为2026年各分类口径(月数=5)；近12月=2025-06~2026-05、前12月=2024-06~2025-05 的品牌子体销售额合计。</span></div>
   </section>
 
   <!-- P5 问题4 -->
@@ -255,9 +260,9 @@ details.voices li .st{font-family:"Sora",sans-serif;font-weight:700;color:var(--
       <div><div class="qno">问题 6</div><h2 class="question">消费人群的使用场景？</h2></div>    </div>
     <div class="section-label" style="margin-top:1.2rem"><span class="dot"></span>结论 · 高频场景（频次 / 频率）</div>
     <div class="cards" style="grid-template-columns:1.3fr 1fr 1fr">
-      <div class="card" style="border-top:3px solid var(--amber)"><div class="label">a. 社媒（YT+Reddit+TikTok · 样本5,205）</div><div style="font-size:.8rem;line-height:1.6;margin-top:.4rem">居家办公(边走边工作/开会) <b>470次 / 9.0%</b><br>刷步数·久坐补偿 <b>417次 / 8.0%</b><br>追剧·娱乐(边看边走) <b>334次 / 6.4%</b><br>跑步·配速训练 <b>260次 / 5.0%</b><br>恶劣天气替代(冬冷/夏热/雨雪) <b>156次 / 3.0%</b></div></div>
-      <div class="card"><div class="label"><span class="cat-pill"><span class="sw" style="background:var(--cat1)"></span>b. 无扶手(评论1,167)</span></div><div style="font-size:.78rem;line-height:1.55;margin-top:.4rem">居家办公 <b>267次 / 22.9%</b><br>刷步数·久坐补偿 <b>136次 / 11.7%</b><br>小空间/公寓健身 <b>123次 / 10.5%</b><br>追剧·娱乐 <b>113次 / 9.7%</b><br>恶劣天气居家运动 <b>45次 / 3.9%</b></div></div>
-      <div class="card c2"><div class="label"><span class="cat-pill"><span class="sw" style="background:var(--cat2)"></span>b. 带扶手(评论2,907)</span></div><div style="font-size:.78rem;line-height:1.55;margin-top:.4rem">居家办公 <b>456次 / 15.7%</b><br>小空间/公寓健身 <b>413次 / 14.2%</b><br>追剧·娱乐 <b>219次 / 7.5%</b><br>跑步·配速训练 <b>182次 / 6.3%</b><br>恶劣天气居家运动 <b>109次 / 3.7%</b></div></div>
+      <div class="card" style="border-top:3px solid var(--amber)"><div class="label">a. 社媒（YT+Reddit+TikTok · 样本5,205）</div><div style="font-size:.8rem;line-height:1.6;margin-top:.4rem">刷步数·久坐补偿 <b>546次 / 10.5%</b><br>居家办公(边走边工作/开会) <b>513次 / 9.9%</b><br>跑步·配速训练 <b>366次 / 7.0%</b><br>追剧·娱乐(边看边走) <b>363次 / 7.0%</b><br>恶劣天气替代(冬冷/夏热/雨雪) <b>308次 / 5.9%</b></div></div>
+      <div class="card"><div class="label"><span class="cat-pill"><span class="sw" style="background:var(--cat1)"></span>b. 无扶手(评论1,167)</span></div><div style="font-size:.78rem;line-height:1.55;margin-top:.4rem">居家办公 <b>277次 / 23.7%</b><br>刷步数·久坐补偿 <b>219次 / 18.8%</b><br>小空间/公寓收纳 <b>178次 / 15.3%</b><br>追剧·娱乐 <b>124次 / 10.6%</b><br>居家日常使用(在家走) <b>100次 / 8.6%</b></div></div>
+      <div class="card c2"><div class="label"><span class="cat-pill"><span class="sw" style="background:var(--cat2)"></span>b. 带扶手(评论2,907)</span></div><div style="font-size:.78rem;line-height:1.55;margin-top:.4rem">小空间/公寓收纳 <b>557次 / 19.2%</b><br>居家办公 <b>501次 / 17.2%</b><br>刷步数·久坐补偿 <b>360次 / 12.4%</b><br>追剧·娱乐 <b>260次 / 8.9%</b><br>居家日常使用(在家走) <b>222次 / 7.6%</b></div></div>
     </div>
     <p style="font-size:.74rem;color:var(--ink-soft);margin:.5rem 0 0">场景按情境细分：居家办公=边走边工作/开会；恶劣天气替代=冬冷·夏热·雨雪天改在室内；小空间/公寓健身=公寓·小户型·桌下收纳；另含追剧娱乐、刷步数、跑步配速、减肥、关节友好等。</p>
     <details class="voices"><summary>社媒原声 10 条（YouTube/Reddit/TikTok）</summary><ul>
@@ -331,8 +336,8 @@ details.voices li .st{font-family:"Sora",sans-serif;font-weight:700;color:var(--
       <div>
         <div class="section-label"><span class="dot"></span>b. 关注点（产品评论 · 细化到具体方面）</div>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-          <div class="card"><div class="label"><span class="cat-pill"><span class="sw" style="background:var(--cat1)"></span>无扶手</span></div><div style="font-size:.76rem;line-height:1.55;margin-top:.3rem">噪音 <b>25.3%</b>：多为「安静、办公适用」好评<br>速度/坡度 <b>26.0%</b>：望最高速&gt;4mph、要可调坡度<br>遥控/显示 <b>22.5%</b> · 价格 <b>20.5%</b><br>皮带/尺寸 <b>19.6%</b>：高个嫌跑带偏短</div></div>
-          <div class="card c2"><div class="label"><span class="cat-pill"><span class="sw" style="background:var(--cat2)"></span>带扶手</span></div><div style="font-size:.76rem;line-height:1.55;margin-top:.3rem">折叠/便携 <b>21.5%</b>：收纳沙发/床下、带滚轮<br>承重/尺寸 <b>19.2%</b> · 组装/易用 <b>19.1%</b>：免安装<br>价格 <b>18.5%</b> · 噪音 <b>17.6%</b></div></div>
+          <div class="card"><div class="label"><span class="cat-pill"><span class="sw" style="background:var(--cat1)"></span>无扶手</span></div><div style="font-size:.74rem;line-height:1.5;margin-top:.3rem">组装/易用 <b>33.9%</b><br>速度/坡度 <b>29.4%</b>（望最高速&gt;4mph、要可调坡度）<br>耐用/损坏 <b>29.4%</b> · 噪音(多为「安静」好评) <b>26.5%</b><br>价格 <b>24.4%</b> · 承重/皮带 <b>23.7%</b>（高个嫌跑带短）· 售后 <b>13.8%</b></div></div>
+          <div class="card c2"><div class="label"><span class="cat-pill"><span class="sw" style="background:var(--cat2)"></span>带扶手</span></div><div style="font-size:.74rem;line-height:1.5;margin-top:.3rem">组装/易用 <b>35.2%</b>（免安装）<br>耐用/损坏 <b>28.0%</b> · 折叠/便携(收纳沙发/床下) <b>25.7%</b><br>价格 <b>23.7%</b> · 承重/尺寸 <b>22.7%</b> · 稳定/安全 <b>20.2%</b><br>噪音 <b>19.0%</b> · 售后 <b>14.7%</b></div></div>
         </div>
         <details class="voices"><summary>产品评论原声 10 条</summary><ul>
           <li><span class="st">无4★</span> "Fits in our small flat and does not make a lot of noise."<br><span style="color:var(--ink-soft)">放得进我们的小公寓，噪音也不大。</span></li>
